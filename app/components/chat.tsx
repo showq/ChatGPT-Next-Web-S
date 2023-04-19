@@ -14,6 +14,8 @@ import DeleteIcon from "../icons/delete.svg";
 import MaxIcon from "../icons/max.svg";
 import MinIcon from "../icons/min.svg";
 
+import qrcode from "../images/qrcode128.png";
+
 import {
   Message,
   SubmitKey,
@@ -561,6 +563,10 @@ export function Chat(props: {
           <div className={styles["window-header-sub-title"]}>
             {Locale.Chat.SubTitle(session.messages.length)}
           </div>
+        </div>
+        <div className={styles["qrcode-wrapper"]}>
+          <img src={qrcode.src} />
+          关注公众号“阿兹海默”，获取密码更新
         </div>
         <div className={styles["window-actions"]}>
           <div className={styles["window-action-button"] + " " + styles.mobile}>
