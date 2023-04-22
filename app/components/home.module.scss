@@ -472,3 +472,24 @@
   height: 100%;
   width: 100%;
 }
+
+.donate-wrapper {
+  padding: 36px 0 0;
+}
+.donate-description {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.donate-code-images {
+  img {
+    width: 150px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .donate-wrapper {
+    padding: 0;
+  }
+}
