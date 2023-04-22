@@ -15,6 +15,8 @@ import MaxIcon from "../icons/max.svg";
 import MinIcon from "../icons/min.svg";
 
 import qrcode from "../images/qrcode128.png";
+import donateCode1 from "../images/code1.png";
+import donateCode2 from "../images/code2.png";
 
 import {
   Message,
@@ -632,6 +634,15 @@ export function Chat(props: {
           setAutoScroll(false);
         }}
       >
+        <div className={styles["donate-wrapper"]}>
+          <div className={styles["donate-description"]}>
+            项目提供免费服务，但API和服务器成本不断增加。如有余力，感谢打赏支持。
+          </div>
+          <div className={styles["donate-code-images"]}>
+            <img src={donateCode1.src} alt="微信打赏" />
+            <img src={donateCode2.src} alt="支付宝打赏" />
+          </div>
+        </div>
         {messages.map((message, i) => {
           const isUser = message.role === "user";
 
