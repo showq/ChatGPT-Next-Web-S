@@ -642,6 +642,9 @@ export function Chat(props: {
             <img src={donateCode1.src} alt="微信打赏" />
             <img src={donateCode2.src} alt="支付宝打赏" />
           </div>
+          <div className={styles["donate-description"]}>
+            地址可能随时变更，公众号“阿兹海默”获取更新
+          </div>
         </div>
         {messages.map((message, i) => {
           const isUser = message.role === "user";

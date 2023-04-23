@@ -457,6 +457,14 @@
   .qrcode-wrapper {
     display: none;
   }
+  .donate-code-images {
+    img {
+      width: 150px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  
 }
 
 .export-content {
@@ -480,16 +488,18 @@
   margin-bottom: 10px;
   font-size: 16px;
 }
-.donate-code-images {
-  img {
-    width: 200px;
-    display: inline-block;
-    margin-right: 15px;
-  }
-}
+
 
 @media only screen and (min-width: 600px) {
   .donate-wrapper {
     padding: 0;
+  }
+
+  .donate-code-images {
+    img {
+      width: 200px;
+      display: inline-block;
+      margin-right: 15px;
+    }
   }
 }
