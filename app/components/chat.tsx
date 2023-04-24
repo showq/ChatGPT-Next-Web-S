@@ -657,7 +657,7 @@ export function Chat(props: {
             <img src={donateCode2.src} alt="支付宝打赏" />
           </div>
           <div className={styles["donate-description"]}>
-            地址可能被迫变更，关注公众号“阿兹海默”防失联
+            地址可能被迫变更，关注公众号“阿兹海默”防失联。当前密码：weekly-01-x8%6bp
           </div>
         </div>
         {messages.map((message, i) => {
