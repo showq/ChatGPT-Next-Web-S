@@ -48,6 +48,7 @@ import styles from "./home.module.scss";
 import chatStyle from "./chat.module.scss";
 
 import { Input, Modal, showModal } from "./ui-lib";
+import { setDefaultResultOrder } from "dns";
 
 const Markdown = dynamic(
   async () => memo((await import("./markdown")).Markdown),
@@ -537,6 +538,7 @@ export function Chat(props: {
     );
 
   const [showPromptModal, setShowPromptModal] = useState(false);
+  const [showDonateImage, setShowDonateImage] = useState(false);
 
   // Auto focus
   useEffect(() => {
@@ -637,8 +639,22 @@ export function Chat(props: {
         <div className={styles["donate-wrapper"]}>
           <div className={styles["donate-description"]}>
             项目提供免费服务，但API和服务器成本不断增加。如有余力，感谢打赏支持。
+            <br />
+            <br />
+            <button
+              className={styles["donate-button"]}
+              type="button"
+              onClick={() => {
+                setShowDonateImage(!showDonateImage);
+              }}
+            >
+              点击打赏
+            </button>
           </div>
-          <div className={styles["donate-code-images"]}>
+          <div
+            className={styles["donate-code-images"]}
+            style={{ display: showDonateImage ? "block" : "none" }}
+          >
             <img src={donateCode1.src} alt="微信打赏" />
             <img src={donateCode2.src} alt="支付宝打赏" />
           </div>
