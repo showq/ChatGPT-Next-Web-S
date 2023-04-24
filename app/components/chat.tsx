@@ -638,9 +638,7 @@ export function Chat(props: {
       >
         <div className={styles["donate-wrapper"]}>
           <div className={styles["donate-description"]}>
-            项目提供免费服务，但API和服务器成本不断增加。如有余力，感谢打赏支持。
-            <br />
-            <br />
+            您可以免费使用本项目。我们持续负担ChatGPT的API成本。如有余力，感谢每月打赏支持。
             <button
               className={styles["donate-button"]}
               type="button"
@@ -648,7 +646,7 @@ export function Chat(props: {
                 setShowDonateImage(!showDonateImage);
               }}
             >
-              点击打赏
+              打赏
             </button>
           </div>
           <div
@@ -659,7 +657,7 @@ export function Chat(props: {
             <img src={donateCode2.src} alt="支付宝打赏" />
           </div>
           <div className={styles["donate-description"]}>
-            地址可能随时变更，公众号“阿兹海默”获取更新
+            地址可能被迫变更，关注公众号“阿兹海默”防失联
           </div>
         </div>
         {messages.map((message, i) => {

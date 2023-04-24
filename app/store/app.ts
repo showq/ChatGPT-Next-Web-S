@@ -133,8 +133,8 @@ export const ModalConfigValidator = {
 };
 
 const DEFAULT_CONFIG: ChatConfig = {
-  historyMessageCount: 2,
-  compressMessageLengthThreshold: 500,
+  historyMessageCount: 4,
+  compressMessageLengthThreshold: 1000,
   sendBotMessages: true as boolean,
   submitKey: SubmitKey.CtrlEnter as SubmitKey,
   avatar: "1f603",
@@ -149,7 +149,7 @@ const DEFAULT_CONFIG: ChatConfig = {
   modelConfig: {
     model: "gpt-3.5-turbo",
     temperature: 1,
-    max_tokens: 1000,
+    max_tokens: 2000,
     presence_penalty: 0,
   },
 };

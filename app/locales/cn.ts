@@ -3,7 +3,7 @@ import { SubmitKey } from "../store/app";
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: "关注公众号“阿兹海默”，回复“密码”获取新密码",
+    Unauthorized: "公众号“阿兹海默”，回复“密码”获取新密码",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -128,7 +128,7 @@ const cn = {
     },
     AccessCode: {
       Title: "访问密码",
-      SubTitle: "获取新密码请关注公众号“阿兹海默”，回复“密码”",
+      SubTitle: "获取新密码请在公众号“阿兹海默”，回复“密码”",
       Placeholder: "请输入访问密码",
     },
     Model: "模型 (model)",
